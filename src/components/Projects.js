@@ -4,7 +4,7 @@ class Projects extends React.Component{
     render() {
         return(
             <div className='project' id='project'>
-                <p >Projects</p>
+                Projects
             </div>
         )
 

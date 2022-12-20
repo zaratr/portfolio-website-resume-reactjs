@@ -17,14 +17,14 @@ class Navbar extends React.Component{
         // const setClick = this.state.useState(false);
         const closeMenu = () => this.state.setClick = false;
         return(
-            <>
                 <nav className='nav' id='navbar'>
-                    <div className='nav-content'>
+
                         <img
                             src={logo}
                             className='nav-logo'
                             alt='Logo'
                             onClick={scroll.scrollToTop}/>
+
                         <ul className="nav-items">
                             <li className='nav-items'>
 
@@ -37,10 +37,8 @@ class Navbar extends React.Component{
                                 <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
                             </li>
                         </ul>
-                    </div>
                 </nav>
 
-            </>
 
         );
     }
