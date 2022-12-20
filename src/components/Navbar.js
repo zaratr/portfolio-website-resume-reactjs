@@ -1,14 +1,21 @@
 import React from "react";
-import {Routes, Route, Link} from "react-router-dom";
+import {NavLink, Link, BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Projects from "./Projects";
 
 class Navbar extends React.Component{
     render() {
         return(
-            <nav>
-                <Link to='../App'>Home</Link>
-                {/*<Link to='Re'>Resume</Link>*/}
-                {/*<Link to='/projects'>Projects</Link>*/}
-            </nav>
+            <>
+                    <nav>
+                        <NavLink to=''>Home</NavLink>
+                        <NavLink to='about'>About</NavLink>
+                        <NavLink to='projects'>Projects</NavLink>
+                    </nav>
+
+            </>
+
         );
     }
 }
