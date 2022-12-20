@@ -3,7 +3,7 @@ import '../style/home.css'
 class Home extends React.Component{
     render() {
         return(
-            <div className='home'>
+            <div className='home' id='home'>
                 <p>body</p>
             </div>
         );

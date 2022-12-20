@@ -1,18 +1,44 @@
 import React from "react";
-import {NavLink, Link, BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
+import logo from "../logo.svg"
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
+import '../style/navbar.css'
 
 class Navbar extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            setClick : false
+        }
+    }
     render() {
+        // const setClick = this.state.useState(false);
+        const closeMenu = () => this.state.setClick = false;
         return(
             <>
-                    <nav>
-                        <NavLink to=''>Home</NavLink>
-                        <NavLink to='about'>About</NavLink>
-                        <NavLink to='projects'>Projects</NavLink>
-                    </nav>
+                <nav className='nav' id='navbar'>
+                    <div className='nav-content'>
+                        <img
+                            src={logo}
+                            className='nav-logo'
+                            alt='Logo'
+                            onClick={scroll.scrollToTop}/>
+                        <ul className="nav-items">
+                            <li className='nav-items'>
+
+                                <Link to='home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+                            </li>
+                            <li className='nav-items'>
+                                <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Projects</Link>
+                            </li>
+                            <li className='nav-items'>
+                                <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
             </>
 

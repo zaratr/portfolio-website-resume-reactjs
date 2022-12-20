@@ -3,7 +3,7 @@ import '../style/project.css'
 class Projects extends React.Component{
     render() {
         return(
-            <div className='project'>
+            <div className='project' id='project'>
                 <p >Projects</p>
             </div>
         )
