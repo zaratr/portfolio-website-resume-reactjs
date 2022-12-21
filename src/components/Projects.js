@@ -3,8 +3,8 @@ import '../style/project.css'
 class Projects extends React.Component{
     render() {
         return(
-            <div className='project'>
-                <p >Projects</p>
+            <div className='project' id='project'>
+                Projects
             </div>
         )
 
