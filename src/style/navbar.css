@@ -1,6 +1,8 @@
 .nav{
+
     display: flex;
     justify-content: space-between;
+    background-color: yellow;
 
 }
 .nav-content{
@@ -13,3 +15,23 @@
     width: 100px;
     height: 100px;
 }
+
+.nav.fixed {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: .5s ease-in-out;
+}
+
+.nav.fixed img{
+    width: 100px;
+    height: 100px;
+}
+.p.fixed{
+    color: white;
+}
+

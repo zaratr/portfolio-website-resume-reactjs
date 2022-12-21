@@ -10,22 +10,36 @@ class Navbar extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            setClick : false
+            setClick : false,
+            fix : false
         }
     }
     render() {
-        // const setClick = this.state.useState(false);
         const closeMenu = () => this.state.setClick = false;
+        const setFixed = () => {
+            console.log("fix : ", window.scrollY, window.scrollY > 100);
+            if(window.scrollY >= 100)
+            {
+                this.setState({fix:true})
+            }
+            else{
+                this.setState({fix:false})
+            }
+
+            console.log("fix", this.state);
+        }
+        window.addEventListener("scroll", setFixed);
         return(
-                <nav className='nav' id='navbar'>
+                <nav className={ this.state.fix ? 'nav fixed':'nav'} id='navbar'>
 
                         <img
                             src={logo}
                             className='nav-logo'
                             alt='Logo'
                             onClick={scroll.scrollToTop}/>
-
-                        <ul className="nav-items">
+                    {this.state.fix?
+                        <p className='p fixed'>Back To Top</p>
+                        :<ul className="nav-items">
                             <li className='nav-items'>
 
                                 <Link to='home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
@@ -37,11 +51,12 @@ class Navbar extends React.Component{
                                 <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
                             </li>
                         </ul>
+                    }
                 </nav>
 
 
-        );
-    }
-}
+        );//return
+    }//render
+}//class
 
 export default Navbar;
