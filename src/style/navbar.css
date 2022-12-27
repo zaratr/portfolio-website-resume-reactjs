@@ -83,6 +83,7 @@
     display: none;
 }
 
+
 a.hide.active {
     display: unset;
     cursor: default;
@@ -115,8 +116,11 @@ a.hide{
 
 
 @media  only screen and (max-width: 768px){
-    /*cellphone size only*/
+    /*cellphone tablet size only*/
 
+    .nav-items{
+        font-size: 50px;
+    }
 
     .nav-content.hide{
         display: none;
@@ -124,7 +128,7 @@ a.hide{
     .nav-content.side{
         display: flex;
         flex-direction: column;
-        padding-top: 100%;
+        padding-top: 50%;
     }
 
 

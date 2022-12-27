@@ -105,32 +105,39 @@ class Navbar extends React.Component{
                     <ul className={`nav-content side `}>
                         <li className={`nav-items` } >
                             <Link to='home'
-
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>Home</Link>
+                                  onClick={closeMenu}>
+                                Home
+                            </Link>
                         </li>
-                        <li className='nav-items'>
+                        <li className='nav-items' >
                             <Link to='projects'
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>Projects</Link>
+                                  onClick={closeMenu}>
+                                Projects
+                            </Link>
                         </li>
                         <li className='nav-items'>
                             <Link to='skills'
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>Skills</Link>
+                                  onClick={closeMenu}>
+                                Skills
+                            </Link>
                         </li>
                         <li className='nav-items'>
                             <Link to='about'
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>About</Link>
+                                  onClick={closeMenu}>
+                                About
+                            </Link>
                         </li>
                     </ul>
 
