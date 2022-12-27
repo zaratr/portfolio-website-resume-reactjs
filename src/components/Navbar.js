@@ -97,6 +97,31 @@ class Navbar extends React.Component{
                 </div>
                 <div className={this.state.menuClass}>
 
+                    <ul className={`nav-content side `}>
+                        <li className={`nav-items` } >
+                            <Link to='home'
+
+                                  activeClass='active' spy={true}
+                                  smooth={true} offset={this.state.offset}
+                                  duration={this.state.dur}
+                                  onClick={closeMenu}>Home</Link>
+                        </li>
+                        <li className='nav-items'>
+                            <Link to='projects'
+                                  activeClass='active' spy={true}
+                                  smooth={true} offset={this.state.offset}
+                                  duration={this.state.dur}
+                                  onClick={closeMenu}>Projects</Link>
+                        </li>
+                        <li className='nav-items'>
+                            <Link to='about'
+                                  activeClass='active' spy={true}
+                                  smooth={true} offset={this.state.offset}
+                                  duration={this.state.dur}
+                                  onClick={closeMenu}>About</Link>
+                        </li>
+                    </ul>
+
                 </div>
             </nav>
 
