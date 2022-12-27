@@ -68,6 +68,7 @@
 .p.fixed{
     cursor: pointer;
     color: white;
+    z-index: -1;
 }
 
 .nav-content.hide{
@@ -91,55 +92,63 @@ a.hide{
 
 .burgerMenu{
     height: 100%;
-    width: 4em;
-    display: flex;
+    width: 2em;
+    display: none;
     flex-direction: column;
     align-items: start;
-    justify-content: space-between;
-    background-color: red;
-    /*background-color: transparent;*/
+    justify-content: space-around;
+    background-color: transparent;
+    padding-right: 1em;
 
 }
 
 .burgerBar{
-    height: 0.2em;
-    width: 4em;
+    height: 0.25em;
+    width: 2em;
     background-color: white;
+    border-radius: 0.5em;
 }
 
-.menu{
-    width: 50%;
-    height: 100vh;
-    background-color: red;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
 
+@media  only screen and (max-width: 768px){
+    /*cellphone size only*/
+
+    /*.nav-content.hide.notmobile{*/
+    /*    display: inherit;*/
+    /*}*/
+
+    .nav-content.hide{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: flex;
+        position: absolute;
+        right: 0%;
+    }
+    .menu{
+        width: 50%;
+        height: 100vh;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .menu.visible{
+        display: inherit;
+        left: 50%;
+        width: 50%;
+    }
+
+
+    /*.notmobile{*/
+        /*display: none;*/
+    /*}*/
+}
 .menu.hidden{
     display: none;
 }
 
-.menu.visible{
-    display: inherit;
-    left: 50%;
-    width: 50%;
-}
-.nav-content.hide.mobile{
-    display: none;
-}
-
-.nav-content.hide.notmobile{
-    display: inherit;
-}
-
-.mobile{
-    position: absolute;
-    right: 0%;
-}
-.notmobile{
-    display: none;
-}
 .burgerBar.clicked:nth-child(1){
     transform: rotate(45deg) translate(0.75em, 1.25em);
     transition: ease-out 0.5s;

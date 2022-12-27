@@ -59,12 +59,12 @@ class Navbar extends React.Component{
                         src={logo}
                         className='nav-logo'
                         alt='Logo'
-                        onClick={scroll.scrollerToTop}
+                        onClick={scroll.scrollToTop}
                     />
                 </div>
                 <p className={`p fixed ${this.state.fix?'' : 'hide'}`} onClick={scroll.scrollToTop}>Back To Top</p>
 
-                <ul className={`nav-content hide ${window.innerWidth > 768 ?  'notmobile' : 'mobile'}`}>
+                <ul className={`nav-content hide `}>
                     <li className={`nav-items` } >
                         <Link to='home'
                               className={this.state.fix?'hide':''}
@@ -90,7 +90,7 @@ class Navbar extends React.Component{
                               onClick={closeMenu}>About</Link>
                     </li>
                 </ul>
-                <div className={`burgerMenu ${window.innerWidth > 768 ?  'notmobile' : 'mobile'}`} onClick={updateMenu}>
+                <div className={`burgerMenu` } onClick={updateMenu}>
                     <div className={this.state.burgerClass} onClick={updateMenu}></div>
                     <div className={this.state.burgerClass} onClick={updateMenu}></div>
                     <div className={this.state.burgerClass} onClick={updateMenu}></div>
