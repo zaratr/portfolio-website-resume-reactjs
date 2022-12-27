@@ -124,6 +124,9 @@ a.hide{
     }
 
 
+    .p.fixed{
+        display: none;
+    }
 
     .burgerMenu{
         display: flex;
@@ -141,12 +144,19 @@ a.hide{
     }
     .menu.visible{
         display: inherit;
-        left: 50%;
+        right: 0%;
         width: 50%;
+        box-shadow: 0px 5px 10px grey;
+
     }
 }
 
 .menu.hidden{
+    right: -50%;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.menu.hidden >.nav-content{
     display: none;
 }
 
@@ -167,7 +177,7 @@ a.hide{
     z-index: 2;
 }
 
-.burgerBar.unclicked{
+.burgerBar.unClicked{
     trasform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
