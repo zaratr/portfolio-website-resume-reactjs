@@ -1,9 +1,6 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import logo from "../logo.svg"
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
+import logo from "../img/logo.svg"
 import '../style/navbar.css'
 
 class Navbar extends React.Component{
@@ -82,6 +79,14 @@ class Navbar extends React.Component{
                               onClick={closeMenu}>Projects</Link>
                     </li>
                     <li className='nav-items'>
+                        <Link to='skills'
+                              className={this.state.fix?'hide':''}
+                              activeClass='active' spy={true}
+                              smooth={true} offset={this.state.offset}
+                              duration={this.state.dur}
+                              onClick={closeMenu}>Skills</Link>
+                    </li>
+                    <li className='nav-items'>
                         <Link to='about'
                               className={this.state.fix?'hide':''}
                               activeClass='active' spy={true}
@@ -100,25 +105,39 @@ class Navbar extends React.Component{
                     <ul className={`nav-content side `}>
                         <li className={`nav-items` } >
                             <Link to='home'
-
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>Home</Link>
+                                  onClick={closeMenu}>
+                                Home
+                            </Link>
                         </li>
-                        <li className='nav-items'>
+                        <li className='nav-items' >
                             <Link to='projects'
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>Projects</Link>
+                                  onClick={closeMenu}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li className='nav-items'>
+                            <Link to='skills'
+                                  activeClass='active' spy={true}
+                                  smooth={true} offset={this.state.offset}
+                                  duration={this.state.dur}
+                                  onClick={closeMenu}>
+                                Skills
+                            </Link>
                         </li>
                         <li className='nav-items'>
                             <Link to='about'
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
-                                  onClick={closeMenu}>About</Link>
+                                  onClick={closeMenu}>
+                                About
+                            </Link>
                         </li>
                     </ul>
 

@@ -5,7 +5,7 @@ class Home extends React.Component{
     render() {
         return(
             <Element className='home' id='home'>
-                Home
+                Homes
             </Element>
         );
     }
