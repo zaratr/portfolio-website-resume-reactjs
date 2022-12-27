@@ -2,25 +2,58 @@
 
     display: flex;
     justify-content: space-between;
-    background-color: yellow;
+    height: 55px;
+    background-color: #282828;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
 }
+
 .nav-content{
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
+    padding-right: 40px;
+    display: flex;
+    color: #cbcaca;
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.nav-items a:hover{
+    line-height: 25px;
+    border-bottom: 3px solid red;
 }
 
 .nav-logo{
-    width: 100px;
-    height: 100px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.nav-logo{
+    width: 50px;
+    height: 50px;
 }
 
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.nav-items{
+    padding-inline: 10px;
+}
 .nav.fixed {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
-    background-color: black;
+    background-color: #282828;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -28,10 +61,125 @@
 }
 
 .nav.fixed img{
-    width: 100px;
-    height: 100px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 .p.fixed{
+    cursor: pointer;
     color: white;
+    z-index: -1;
 }
+
+.nav-content.hide{
+    margin-left: auto;
+}
+
+.p.fixed.hide{
+    display: none;
+}
+
+a.hide.active {
+    display: unset;
+    cursor: default;
+    line-height: unset;
+    border-bottom: unset;
+}
+a.hide{
+    display: none;
+    cursor: default;
+}
+
+.burgerMenu{
+    height: 100%;
+    width: 2em;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    background-color: transparent;
+    padding-right: 1em;
+
+}
+
+.burgerBar{
+    height: 0.25em;
+    width: 2em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+
+@media  only screen and (max-width: 768px){
+    /*cellphone size only*/
+
+
+    .nav-content.hide{
+        display: none;
+    }
+    .nav-content.side{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100%;
+    }
+
+
+    .p.fixed{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: flex;
+        position: absolute;
+        right: 0%;
+    }
+    .menu{
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(52, 52, 52, 0.5);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        backdrop-filter: blur(3px);
+    }
+    .menu.visible{
+        display: inherit;
+        right: 0%;
+        width: 50%;
+        box-shadow: 0px 5px 10px grey;
+
+    }
+}
+
+.menu.hidden{
+    right: -50%;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.menu.hidden >.nav-content{
+    display: none;
+}
+
+.burgerBar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.burgerBar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burgerBar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+    z-index: 2;
+}
+
+.burgerBar.unClicked{
+    trasform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
 

@@ -1,11 +1,12 @@
 import React from "react";
-import '../style/project.css'
+import '../style/projects.css'
+import {Element} from 'react-scroll'
 class Projects extends React.Component{
     render() {
         return(
-            <div className='project' id='project'>
+            <Element className='projects' id='projects'>
                 Projects
-            </div>
+            </Element>
         )
 
     }
