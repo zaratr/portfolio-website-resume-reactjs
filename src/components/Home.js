@@ -1,11 +1,12 @@
 import React from "react";
 import '../style/home.css'
+import {Element} from 'react-scroll'
 class Home extends React.Component{
     render() {
         return(
-            <div className='home' id='home'>
+            <Element className='home' id='home'>
                 Home
-            </div>
+            </Element>
         );
     }
 }
