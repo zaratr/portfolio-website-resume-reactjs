@@ -5,7 +5,6 @@ class Home extends React.Component{
     render() {
         return(
             <Element className='home' id='home'>
-                Home
                 <div className='wave'>
                 </div>
             </Element>
