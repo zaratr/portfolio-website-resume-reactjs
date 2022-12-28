@@ -1,7 +1,58 @@
 .home{
-    background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #282828, #3c3c3c);
+    background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #1a39e8, #c21998);
+    /*background-image: url(../img/waveTestBackground.png),repeating-linear-gradient(90deg, #1a39e8, #c21998);*/
+    /*position: absolute;*/
+    /*background-size: 100%;*/
     background-size: cover;
+    width: 100%;
+    min-height: 45rem;
+    background-repeat: repeat no-repeat;
+    overflow: hidden;
+    /*bottom: -1px;*/
+}
+.background{
+    background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #1a39e8, #c21998);
+    /*background: white;*/
+    position: absolute;
+    left: 0;
+    width: 200%;
     height: 100%;
-    min-height: 25rem;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    background-size: 50% 80px;
+    transform-origin: center bottom;
+    min-height: 45rem;
     position: relative;
+    animation: animate 18s linear infinite;
+}
+
+.wave {
+    --size: 50px;
+    --R: calc(var(--size)*1.28);
+    --bottomPosition: 600px;
+
+    -webkit-mask:
+            radial-gradient(var(--R) at 50% calc(1.8*var(--size)),#000 99%,#0000 101%)
+            calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+            radial-gradient(var(--R) at 50% calc(-.8*var(--size)),#0000 99%,#000 101%)
+            50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+    /*background: linear-gradient(90deg,red,blue);*/
+    background: white;
+    height: 150px;
+    width: 200%;
+    animation: animate 18s alternate-reverse infinite;
+
+}
+
+@keyframes animate{
+    0%{
+        /*transform: ;*/
+        transform: translatex(0) translateY(var(--bottomPosition)) translateZ(0) scaleY(1);
+    }
+    50%{
+        transform: translatex(-25%) translateY(var(--bottomPosition)) translateZ(0) scaleY(0.55);
+    }
+    100%{
+        transform: translatex(-50%) translateY(var(--bottomPosition)) translateZ(0) scaleY(1);
+    }
 }
