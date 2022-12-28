@@ -10,21 +10,6 @@
     overflow: hidden;
     /*bottom: -1px;*/
 }
-.background{
-    background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #1a39e8, #c21998);
-    /*background: white;*/
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    background-size: 50% 80px;
-    transform-origin: center bottom;
-    min-height: 45rem;
-    position: relative;
-    animation: animate 18s linear infinite;
-}
 
 .wave {
     --size: 50px;
