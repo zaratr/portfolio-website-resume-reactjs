@@ -7,12 +7,11 @@ class Home extends React.Component{
         return(
             <Element className='home' id='home'>
                 <div className='layout'>
-                    <p className='intro-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam architecto cum distinctio
-                        earum et hic minus nihil, numquam officia porro quisquam velit veniam, veritatis voluptate? Corporis
-                        minus recusandae veritatis!
+                    <p className='intro-paragraph'>
+                        Hi! I'm Raul, a Fullstack Developer with a Mathematics Degree. Projects below demonstrate some of
+                        my skills on my journey in becoming a Computer Scientist.
                     </p>
-
-                    <img className='proImage' src={proImage} alt=""/>
+                    <img className='proImage avatar-wobble' src={proImage} alt=""/>
                 </div>
                 <div className='wave'></div>
             </Element>

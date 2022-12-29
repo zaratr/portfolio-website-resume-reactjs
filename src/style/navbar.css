@@ -159,6 +159,42 @@ a.hide{
     }
 }
 
+@media  only screen and (max-width: 768px){
+    /*cellphone tablet size only*/
+
+    .nav-items{
+        font-size: 40px;
+    }
+
+    .menu{
+        width: 50%;
+        height: 120vh;
+        background-color: rgba(52, 52, 52, 0.5);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        backdrop-filter: blur(3px);
+    }
+}
+
+@media  only screen and (max-width: 768px){
+    /*cellphone tablet size only*/
+
+    .nav-items{
+        font-size: 20px;
+    }
+
+    .menu{
+        width: 50%;
+        height: 120vh;
+        background-color: rgba(52, 52, 52, 0.5);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        backdrop-filter: blur(3px);
+    }
+}
+
 .menu.hidden{
     right: -50%;
     height: 0%;

@@ -39,10 +39,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-top: 80px;
 }
 .intro-paragraph{
     font-size: 30px;
-    width: 30%;
+    width: 40%;
 }
 
 .proImage{
@@ -59,5 +60,54 @@
     }
     100%{
         transform: translatex(-50%) translateY(var(--bottomPosition)) translateZ(0) scaleY(1);
+    }
+}
+
+.avatar-wobble {
+    height       : 16rem;
+    border-radius: 80% 20% 81% 19% / 23% 81% 19% 77%;
+    transform    : rotate(-2deg);
+    animation    : wobble-article 7s ease-in-out alternate infinite;
+}
+
+@keyframes wobble-article {
+    50% {
+        border-radius: 750px 550px 350px 750px / 450px 750px 550px 650px;
+    }
+
+    100% {
+        border-radius: 750px 250px 750px 250px / 450px 750px 250px 550px;
+        transform    : rotate(2deg);
+    }
+}
+
+@media  only screen and (max-width: 768px){
+    .layout{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-paragraph{
+        font-size: 20px;
+        width: 50%;
+    }
+    .proImage{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media  only screen and (max-width: 425px) {
+    .layout{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-paragraph{
+        font-size: 15px;
+        width: 50%;
+    }
+    .proImage{
+        height: 150px;
+        width: 150px;
+        padding-top: 50px;
     }
 }
