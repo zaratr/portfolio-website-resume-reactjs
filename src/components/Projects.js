@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col } from 'react-bootstrap';
-// import {Fade} from 'react-reveal';
+import {Fade} from 'react-reveal';
 import {Element} from 'react-scroll';
 import ProjectCard from "./ProjectCard";
 import '../style/projects.css';
@@ -44,9 +44,9 @@ class Projects extends React.Component{
                 <div id='projects' className={'w-100 m-0 p-0 unselectable'}>
                     <Container className={'py-5'}>
                         <div className={'fw-light'}>
-                            <div className={'top-fade cascade-fade'}>
+                            <Fade top cascade>
                                 <p className={'fs-1 text-gray fw-bold'}>Recent Projects</p>
-                            </div>
+                            </Fade>
                             <Row className={'text-center'}>
                                 <Col className={'col-12 col-lg-6'}>
                                     {/*{this.state.projects?.map((project) => (*/}

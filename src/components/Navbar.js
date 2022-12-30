@@ -9,7 +9,7 @@ class Navbar extends React.Component{
         this.state = {
             setClick : false,
             fix : false,
-            dur : 1000,
+            dur : 0,
             offset: -75,
             burgerClass : 'burgerBar unClicked',
             menuClass : 'menu hidden',
@@ -18,13 +18,6 @@ class Navbar extends React.Component{
     }
 
 
-    scrollerToTop(){
-        scroll.scrollToTop({
-            //TODO: not sure why this isn't working yet - url(https://github.com/fisshy/react-scroll/tree/master/examples). Possible fix : use scrollTO(options:) function
-            // duration: 10000,
-            // delay: 0,
-        });
-    }
     render() {
         const updateMenu = () => {
             !this.state.isMenuClicked?

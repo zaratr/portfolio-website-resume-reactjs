@@ -1,9 +1,11 @@
 import React from 'react';
 import {Card, Row, Col, Image, Container, Button, Badge} from 'react-bootstrap';
-import {PulseLoader} from "react-spinners";
+import { Fade } from "react-reveal";
+import { css } from '@emotion/css'
+import PulseLoader from 'react-spinners/PulseLoader'
 import ButtonLink from './ButtonLink';
 import ProgressiveImage from "react-progressive-graceful-image";
-import async from "async";
+import '../style/projectcard.css';
 
 class ProjectCard extends React.Component{
     constructor(props){
@@ -47,10 +49,10 @@ class ProjectCard extends React.Component{
                             <div className="img-hover-zoom position-relative">
                                 <Badge
                                     className="position-absolute top-0 start-0 m-3 rounded-0"
-                                    style={{ zIndex: 200 }}
+                                    style={{ zIndex: 0 }}
                                     bg="purple"
                                 >
-                                    {'words'}
+                                    {this.props.projectData.type}
                                 </Badge>
                                 <img
                                     className="card-img-top project-avatar"
@@ -72,11 +74,10 @@ class ProjectCard extends React.Component{
                     }
 
                 </ProgressiveImage>
-                {/*))//map func*/}
 
 
 
-                <Card.Body className={'projects-bg-image text-white pb-1'}>
+                <Card.Body className={'projects-bg-image text-black pb-1'}>
                     <Card.Title className={'fs-3}'}>{this.props.projectData.title}</Card.Title>
                     <Card.Text>{this.props.projectData.description}</Card.Text>
                     <Row className={"border-top align-items-center"}>
@@ -119,9 +120,9 @@ class ProjectCard extends React.Component{
 
 
         return(
-            <div className={'bottom-fade'}>
+            <Fade bottom>
                 {project}
-            </div>
+            </Fade>
         );
     }
 
