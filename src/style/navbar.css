@@ -120,10 +120,10 @@ a.hide{
     /*cellphone tablet size only*/
 
     .nav-items{
-        font-size: 50px;
+        font-size: 30px;
     }
 
-    .nav-content.hide{
+    .nav-content.shift{
         display: none;
     }
     .nav-content.side{
