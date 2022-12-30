@@ -1,0 +1,25 @@
+
+/*.project-bg-image {*/
+/*    --myColor1 : #282828;*/
+/*    --myColor2 : #3c3c3c;*/
+/*    background-image: url(../img/waveTestBackground.png),linear-gradient(to right,var(--myColor2),var(--myColor1));*/
+/*    background-size: cover;*/
+/*    color: #0e0091;*/
+/*    transition: --myColor1 .5s ease-in-out,--myColor2 .5s;*/
+/*}*/
+
+
+.projects-bg-image{
+
+        --myColor1 : #282828;
+        --myColor2 : #3c3c3c;
+    background-image: url(../img/waveBackgroundBg.png), linear-gradient(to right, var(--myColor2), var(--myColor1));
+    background-size: cover;
+        color: #0e0091;
+        transition: --myColor1 .5s ease-in-out,--myColor2 .5s;
+}
+
+/*.project-card{*/
+/**/
+/*    background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #282828, #3c3c3c);*/
+/*}*/

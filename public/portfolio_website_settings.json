@@ -24,16 +24,16 @@
         "url": "https://github.com/zaratr/Web.git",
         "technologies": [
           {
-            "class": "devicon-javascript-plain",
+            "class": "images/icon/Javascript.png",
             "name": "JavaScript"
           },
           {
-            "class": "devicon-html5-plain",
+            "class": "images/icon/HTML5.png",
             "name": "HTML5"
           },
           {
-            "class": "devicon-bootstrap-plain",
-            "name": "BootStrap"
+            "class": "images/icon/CSS3.png",
+            "name": "CSS3"
           }
         ]
       },
@@ -50,19 +50,19 @@
         "url": "https://github.com/zaratr/SelfDrivingCarVision.git",
         "technologies": [
           {
-            "class": "devicon-python-plain",
+            "class": "images/icon/Python.png",
             "name": "Python"
           },
           {
-            "class": "devicon-tensorflow-original",
+            "class": "images/icon/Tensorflow.png",
             "name": "Tensorflow"
           },
           {
-            "class": "devicon-numpy-original-wordmark",
+            "class": "images/icon/NumPy.png",
             "name": "NumPy"
           },
           {
-            "class": "devicon-pandas-original",
+            "class": "images/icon/Pandas.png",
             "name": "Pandas"
           }
         ]
@@ -80,11 +80,11 @@
         "url": "https://github.com/zaratr/DeepAIGameBot.git",
         "technologies": [
           {
-            "class": "devicon-python-plain",
+            "class": "images/icon/Python.png",
             "name": "Python"
           },
           {
-            "class": "devicon-numpy-original-wordmark",
+            "class": "images/icon/NumPy.png",
             "name": "NumPy"
           }
         ]
