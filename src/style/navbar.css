@@ -20,7 +20,12 @@
     cursor: pointer;
 
 }
+.nav-content.shift{
+    margin-left: auto;
+}
+
 .nav-content.hide{
+    margin-left: auto;
     cursor: default;
 }
 
@@ -73,10 +78,6 @@
     cursor: pointer;
     color: white;
     z-index: -1;
-}
-
-.nav-content.hide{
-    margin-left: auto;
 }
 
 .p.fixed.hide{
@@ -156,42 +157,6 @@ a.hide{
         width: 50%;
         box-shadow: 0px 5px 10px grey;
 
-    }
-}
-
-@media  only screen and (max-width: 768px){
-    /*cellphone tablet size only*/
-
-    .nav-items{
-        font-size: 40px;
-    }
-
-    .menu{
-        width: 50%;
-        height: 120vh;
-        background-color: rgba(52, 52, 52, 0.5);
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        backdrop-filter: blur(3px);
-    }
-}
-
-@media  only screen and (max-width: 768px){
-    /*cellphone tablet size only*/
-
-    .nav-items{
-        font-size: 20px;
-    }
-
-    .menu{
-        width: 50%;
-        height: 120vh;
-        background-color: rgba(52, 52, 52, 0.5);
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        backdrop-filter: blur(3px);
     }
 }
 

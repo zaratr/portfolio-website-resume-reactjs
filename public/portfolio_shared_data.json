@@ -1,0 +1,106 @@
+{
+    "basic_info": {
+      "name": "Raul Zarate",
+      "titles": [ "Software Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/zaratr",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com/myzarate",
+          "class": "fab fa-instagram"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/raul-zarate",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "smallrman.png",
+      "mainImg": "vaporwave.gif"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "65"
+        },
+        {
+          "name": "C++(Strong)",
+          "class": "devicon-cplusplus-plain",
+          "level": "80"
+        },
+        {
+          "name": "C(Strong)",
+          "class": "devicon-c-plain",
+          "level": "90"
+        },
+        {
+          "name": "Python(Strong)",
+          "class": "devicon-python-plain",
+          "level": "75"
+        },
+        
+        {
+          "name": "Java(Strong)",
+          "class": "devicon-java-plain",
+          "level": "60"
+        },
+
+        {
+          "name": "Pandas",
+          "class": "devicon-pandas-plain",
+          "level": "75"
+        },
+        {
+          "name": "Tensorflow",
+          "class": "devicon-tensorflow-original",
+          "level": "75"
+        },
+        {
+          "name": "Heroku",
+          "class": "devicon-heroku-plain",
+          "level": "75"
+        },
+        {
+          "name": "Keras",
+          "class": "devicon-kaggle-plain",
+          "level": "75"
+        },
+        {
+          "name": "Sass",
+          "class": "devicon-sass-plain",
+          "level": "75"
+        },
+        {
+          "name":"OpenCV",
+          "class":"devicon-opencv-plain"
+
+        }
+      ]
+    }
+  }
