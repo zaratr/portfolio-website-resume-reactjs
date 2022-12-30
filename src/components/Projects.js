@@ -49,51 +49,48 @@ class Projects extends React.Component{
                             </Fade>
                             <Row className={'text-center'}>
                                 <Col className={'col-12 col-lg-6'}>
-                                    {/*{this.state.projects?.map((project) => (*/}
-                                        <ProjectCard
-                                            projectsData={this.props.projectsData}
-                                            openPreview={this.openPreview}
-                                            // previewData={this.props.previewData}
-                                        />
-                                    {/*))}*/}
-                                </Col>
-
-                            </Row>
-                            <Row className={'text-center'}>
-                                {this.props.projectsData?.map((project, i) => (
-                                    <>
-                                        {i > 1?
-                                            <Col className={'col-12 col-lg-6'}>
-                                                <ProjectCard
-                                                    // projectsData={this.props.projectsData}
-                                                    openPreview={this.openPreview}
-                                                    projectData={project}
-                                                    setPreviewData = {this.setPreviewData}
-                                                />
-                                            </Col>
-                                            :
-                                            <Col className={'col-12 col-lg-6 mt-0 mt-lg-5'}>
-                                                <ProjectCard
-                                                    // projectsData={this.props.projectsData}
-                                                    openPreview={this.openPreview}
-                                                    projectData={project}
-                                                    setPreviewData = {this.setPreviewData}
-                                                />
-                                            </Col>
-                                        }
-                                    </>
+                                    {this.props.projectsData?.map((project, i) => (
+                                            <>
+                                                {i < 2?
+                                                    <ProjectCard
+                                                        // projectsData={this.props.projectsData}
+                                                        openPreview={this.openPreview}
+                                                        projectData={project}
+                                                        setPreviewData = {this.setPreviewData}
+                                                    />
+                                                    :""
+                                                }
+                                            </>
+                                        )
                                     )
-                                )
+                                    }
+                                </Col>
+                                <Col className={'col-12 col-lg-6 mt-0 mt-lg-5'}>
+                                    {this.props.projectsData?.map((project, i) => (
+                                            <>
+                                                {i > 2?
+                                                    <ProjectCard
+                                                        openPreview={this.openPreview}
+                                                        projectData={project}
+                                                        setPreviewData = {this.setPreviewData}
+                                                    />
+                                                    :""
+                                                }
+                                            </>
+                                        )
+                                    )
+                                    }
+                                </Col>
                                 }
 
                             </Row>
                         </div>
                     </Container>
+                </div>
                     <ModalPreview
                         showPreview={this.state.showPreview}
                         previewData={this.state.previewData}
                         closePreview={this.closePreview}/>
-                </div>
             </Element>
 
         )//return

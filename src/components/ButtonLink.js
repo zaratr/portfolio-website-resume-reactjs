@@ -17,7 +17,8 @@ class ButtonLink extends React.Component{
                 rel="noreferrer"
                 title="Open website with live project"
             >
-                {this.props.linkText} <i className={`ms-1 fa ${this.props.LinkIcon}`}></i>
+                <img src={this.props.linkIcon} className={'ms-1 w-25'} alt="icon-link"/>
+                {this.props.linkText}
             </Button>
         )//return
     }//render

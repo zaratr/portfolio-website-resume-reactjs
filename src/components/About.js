@@ -21,6 +21,11 @@ class About extends React.Component {
                                 </p>
                                 <p className='text-justify'>Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment. </p>
                                 <p className='text-justify'>During these jobs, I self taught few programming languages and wen't to school for mathematics. below are some of the work I've done in Machine Learning, Full Stack, IOT projects, and Android Developement.</p>
+                                <p className='text-justify center'>
+                                    Contact me at : zarater.raul@gmail.com <a href={'https://mail.google.com'}>on gmail!</a>
+                                    (424) 344-8286
+
+                                </p>
                             </Fade>
                         </div>
                     </Container>

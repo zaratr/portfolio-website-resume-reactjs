@@ -88,6 +88,85 @@
             "name": "NumPy"
           }
         ]
+      },
+      {
+        "title": "BootStrap and HTML5-CSS3 WebPage",
+        "startDate": "2018",
+        "header": "FrontEnd Development",
+        "description": "Before Learning React, I self taught myself Multi Page App",
+        "type": "Web",
+        "images": [
+          "images/portfolio/bootstrap_javascript/topWeb.JPG",
+          "images/portfolio/bootstrap_javascript/middleWeb.JPG",
+          "images/portfolio/bootstrap_javascript/bottomWeb.JPG"
+        ],
+        "url": "https://github.com/zaratr/Web.git",
+        "technologies": [
+          {
+            "class": "images/icon/Javascript.png",
+            "name": "JavaScript"
+          },
+          {
+            "class": "images/icon/HTML5.png",
+            "name": "HTML5"
+          },
+          {
+            "class": "images/icon/CSS3.png",
+            "name": "CSS3"
+          }
+        ]
+      },
+      {
+        "title": "Self Driving Car",
+        "startDate": "2018",
+        "header": "AI Development",
+        "description": "Practice with a Tesla-Like simulation environment to create a self-driving vehicle algorithm",
+        "type": "Web",
+        "images": [
+          "images/portfolio/SelfDrivingCar/ReinforcementLearning.JPG",
+          "images/portfolio/SelfDrivingCar/SelfDrivingCarCode.JPG"
+        ],
+        "url": "https://github.com/zaratr/SelfDrivingCarVision.git",
+        "technologies": [
+          {
+            "class": "images/icon/Python.png",
+            "name": "Python"
+          },
+          {
+            "class": "images/icon/Tensorflow.png",
+            "name": "Tensorflow"
+          },
+          {
+            "class": "images/icon/NumPy.png",
+            "name": "NumPy"
+          },
+          {
+            "class": "images/icon/Pandas.png",
+            "name": "Pandas"
+          }
+        ]
+      },
+      {
+        "title": "StarCraft 2 Bot",
+        "startDate": "2019",
+        "header": "FrontEnd Development",
+        "description": "Reinforcement learning AI to play against Computer and Human Players",
+        "type": "Web",
+        "images": [
+          "images/portfolio/StarCraft/StarCraftAI.JPG",
+          "images/portfolio/StarCraft/StarCraftBotCode.JPG"
+        ],
+        "url": "https://github.com/zaratr/DeepAIGameBot.git",
+        "technologies": [
+          {
+            "class": "images/icon/Python.png",
+            "name": "Python"
+          },
+          {
+            "class": "images/icon/NumPy.png",
+            "name": "NumPy"
+          }
+        ]
       }
     ],
     "experience": [

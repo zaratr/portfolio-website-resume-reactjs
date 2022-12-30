@@ -83,7 +83,7 @@ class ModalPreview extends React.Component{
                         <ButtonLink
                             projectUrl={this.props.previewData.live_page}
                             linkText="Live Page"
-                            LinkIcon="fa-external-link"
+                            linkIcon={'images/icon/livelink.png'}
                         />
                     ) : (
                         ""

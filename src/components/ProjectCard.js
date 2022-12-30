@@ -15,6 +15,11 @@ class ProjectCard extends React.Component{
             previewData : []
         }
     }
+    override = css`
+    display: block;
+    margin: 10rem auto;
+    border-color: red;
+    `;
     openModal = () =>{
         this.props.openPreview();
         const tempData = this.props.projectData;
@@ -49,7 +54,7 @@ class ProjectCard extends React.Component{
                             <div className="img-hover-zoom position-relative">
                                 <Badge
                                     className="position-absolute top-0 start-0 m-3 rounded-0"
-                                    style={{ zIndex: 0 }}
+                                    style={{ zIndex: 1 }}
                                     bg="purple"
                                 >
                                     {this.props.projectData.type}
@@ -67,6 +72,7 @@ class ProjectCard extends React.Component{
                                 <PulseLoader
                                     color="#9d16bf"
                                     loading={true}
+                                    css={this.override}
                                     size={20}
                                 />
                             </Container>
@@ -77,7 +83,7 @@ class ProjectCard extends React.Component{
 
 
 
-                <Card.Body className={'projects-bg-image text-black pb-1'}>
+                <Card.Body className={'project-bg-image text-white pb-1'}>
                     <Card.Title className={'fs-3}'}>{this.props.projectData.title}</Card.Title>
                     <Card.Text>{this.props.projectData.description}</Card.Text>
                     <Row className={"border-top align-items-center"}>
@@ -106,7 +112,7 @@ class ProjectCard extends React.Component{
                                             <ButtonLink
                                                 projectUrl={this.props.projectData.url}
                                                 liveText={'live page'}
-                                                linkIcon={'fa-github'}>
+                                                linkIcon={'images/icon/github.png'}>
 
                                             </ButtonLink>
                                         </Col>
