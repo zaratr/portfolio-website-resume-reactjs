@@ -86,7 +86,7 @@
 
 
 a.hide.active {
-    display: unset;
+    /*display: unset;*/
     cursor: default;
     line-height: unset;
     border-bottom: unset;
@@ -104,7 +104,7 @@ a.hide{
     align-items: start;
     justify-content: space-around;
     background-color: transparent;
-    padding-right: 1em;
+    padding-right: 3em;
 
 }
 

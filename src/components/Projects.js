@@ -4,29 +4,35 @@ import {Container, Row, Col } from 'react-bootstrap';
 import {Element} from 'react-scroll';
 import ProjectCard from "./ProjectCard";
 import '../style/projects.css';
+import ModalPreview from "./ModalPreview";
 
 class Projects extends React.Component{
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         projects : []
-    //     }//state
-    // }//constructor
-    //
-    // componentDidMount() {
-    //     this.setState({
-    //         projects : this.props.projectsData
-    //     })
-    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            showPreview : false,
+            previewData : {},
+        }//state
+    }//constructor
+    setPreviewData = (data) => {
+        this.setState({
+            previewData : data
+        });
+    }
+    openPreview = () => {
+        this.setState({
+            showPreview:true
+        })
+    }
+
+    closePreview = () =>{
+        this.setState({
+            showPreview : false
+        })
+    }
 
 
     render() {
-        // console.log('HERE2', this.props.projectsData);
-        // console.log('HERE3', this.props.openPreview);
-        // console.log('HERE4', this.props.previewData);
-        // console.log("hereadf" , this.state.projects);
-        // console.log("hereadfnum2" , this.state.projects[0].type);
-        // console.log("hereadfnum3" , this.state.projects[0].images[0]);
 
         return(
             <Element
@@ -46,7 +52,7 @@ class Projects extends React.Component{
                                     {/*{this.state.projects?.map((project) => (*/}
                                         <ProjectCard
                                             projectsData={this.props.projectsData}
-                                            openPreview={this.props.openPreview}
+                                            openPreview={this.openPreview}
                                             // previewData={this.props.previewData}
                                         />
                                     {/*))}*/}
@@ -59,19 +65,19 @@ class Projects extends React.Component{
                                         {i > 1?
                                             <Col className={'col-12 col-lg-6'}>
                                                 <ProjectCard
-                                                    projectsData={this.props.projectsData}
-                                                    openPreview={this.props.openPreview}
+                                                    // projectsData={this.props.projectsData}
+                                                    openPreview={this.openPreview}
                                                     projectData={project}
-                                                    // previewData={this.props.previewData}
+                                                    setPreviewData = {this.setPreviewData}
                                                 />
                                             </Col>
                                             :
                                             <Col className={'col-12 col-lg-6 mt-0 mt-lg-5'}>
                                                 <ProjectCard
-                                                    projectsData={this.props.projectsData}
-                                                    openPreview={this.props.openPreview}
+                                                    // projectsData={this.props.projectsData}
+                                                    openPreview={this.openPreview}
                                                     projectData={project}
-                                                    // previewData={this.props.previewData}
+                                                    setPreviewData = {this.setPreviewData}
                                                 />
                                             </Col>
                                         }
@@ -83,8 +89,13 @@ class Projects extends React.Component{
                             </Row>
                         </div>
                     </Container>
+                    <ModalPreview
+                        showPreview={this.state.showPreview}
+                        previewData={this.state.previewData}
+                        closePreview={this.closePreview}/>
                 </div>
             </Element>
+
         )//return
 
     }//render

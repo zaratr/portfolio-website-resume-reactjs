@@ -15,9 +15,9 @@ class ProjectCard extends React.Component{
     }
     openModal = () =>{
         this.props.openPreview();
-        this.setState({
-            previewData : []
-        });
+        const tempData = this.props.projectData;
+        const filteredData = {title: tempData.title, avatar:tempData.images[0], header:tempData.header, description:tempData.description, skills:tempData.technologies, images:tempData.images, live_page:tempData.url}
+        this.props.setPreviewData(filteredData);
     };
     onCardClicked = (event) =>{
         event.stopPropagation();
@@ -34,8 +34,8 @@ class ProjectCard extends React.Component{
             var project = <Card
                 className={`mb-4 project-card shadow rounded-0 ${this.state.touched? 'project-card-focus': ''}`}
                 onClick={(event) => this.onCardClicked(event)}
-                onTouchStart={() => this.state.touched(true)}
-                onTouchEnd={() => setTimeout(() => {this.state.touched(false);},200)}
+                onTouchStart={() => this.setState({touched : true})}
+                onTouchEnd={() => setTimeout(() => {this.setState({touched:false})},200)}
                 onMouseEnter={() => this.setState({touched : true})}
                 onMouseLeave={() => this.setState({touched : false})}
             >

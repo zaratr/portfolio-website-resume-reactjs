@@ -13,6 +13,7 @@
       {
         "title": "BootStrap and HTML5-CSS3 WebPage",
         "startDate": "2018",
+        "header": "FrontEnd Development",
         "description": "Before Learning React, I self taught myself Multi Page App",
         "type": "Web",
         "images": [
@@ -39,6 +40,7 @@
       {
         "title": "Self Driving Car",
         "startDate": "2018",
+        "header": "AI Development",
         "description": "Practice with a Tesla-Like simulation environment to create a self-driving vehicle algorithm",
         "type": "Web",
         "images": [
@@ -68,6 +70,7 @@
       {
         "title": "StarCraft 2 Bot",
         "startDate": "2019",
+        "header": "FrontEnd Development",
         "description": "Reinforcement learning AI to play against Computer and Human Players",
         "type": "Web",
         "images": [

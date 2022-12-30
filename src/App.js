@@ -12,31 +12,11 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            showPreview : false,
-            previewData : {
-                title: "",
-                avatar: "",
-                header: "",
-                body: "",
-                skills: "",
-                images: ""
-            },
             portfolioData: {},
             sharedData:{}
         }
     }
 
-    openPreview = () => {
-        this.setState({
-            showPreview:true
-        })
-    }
-
-    closePreview = () =>{
-        this.setState({
-            showPreview : false
-        })
-    }
 
     loadProjectsData = (path) =>{
         $.ajax({
@@ -68,16 +48,17 @@ class App extends React.Component{
 
     render() {
 
-        console.log('HERE1eeeee', this.state.portfolioData);
+        // console.log('HERE1eeeee', this.state.portfolioData);
         return (
             <>
                 <Navbar/>
                 <Home basicInfo={this.state.portfolioData.basic_info}/>
                 <Projects
                     projectsData={this.state.portfolioData.projects}
-                    openPreview={this.openPreview}
-                    previewData={this.state.previewData}
+                    // openPreview={this.openPreview}
+                    // setPreviewData={this.setPreviewData}
                 />
+
                 <Skills skillsData={this.state.sharedData.skills}/>
                 <About/>
                 <Footer/>
