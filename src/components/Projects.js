@@ -81,7 +81,7 @@ class Projects extends React.Component{
                                     )
                                     }
                                 </Col>
-                                }
+
 
                             </Row>
                         </div>
