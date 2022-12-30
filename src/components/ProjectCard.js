@@ -47,10 +47,10 @@ class ProjectCard extends React.Component{
                             <div className="img-hover-zoom position-relative">
                                 <Badge
                                     className="position-absolute top-0 start-0 m-3 rounded-0"
-                                    style={{ zIndex: 200 }}
+                                    style={{ zIndex: 0 }}
                                     bg="purple"
                                 >
-                                    {'words'}
+                                    {this.props.projectData.type}
                                 </Badge>
                                 <img
                                     className="card-img-top project-avatar"
@@ -119,7 +119,7 @@ class ProjectCard extends React.Component{
 
 
         return(
-            <div className={'bottom-fade'}>
+            <div className={''}>
                 {project}
             </div>
         );
