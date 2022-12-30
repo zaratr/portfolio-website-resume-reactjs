@@ -54,16 +54,31 @@ class Projects extends React.Component{
 
                             </Row>
                             <Row className={'text-center'}>
-                                <Col className={'col-12 col-lg-6'}>
-                                    {this.props.projectsData?.map((project, i) => (
-                                    <ProjectCard
-                                        projectsData={this.props.projectsData}
-                                        openPreview={this.props.openPreview}
-                                        projectData={project}
-                                        // previewData={this.props.previewData}
-                                    />
-                                    ))}
-                                </Col>
+                                {this.props.projectsData?.map((project, i) => (
+                                    <>
+                                        {i > 1?
+                                            <Col className={'col-12 col-lg-6'}>
+                                                <ProjectCard
+                                                    projectsData={this.props.projectsData}
+                                                    openPreview={this.props.openPreview}
+                                                    projectData={project}
+                                                    // previewData={this.props.previewData}
+                                                />
+                                            </Col>
+                                            :
+                                            <Col className={'col-12 col-lg-6 mt-0 mt-lg-5'}>
+                                                <ProjectCard
+                                                    projectsData={this.props.projectsData}
+                                                    openPreview={this.props.openPreview}
+                                                    projectData={project}
+                                                    // previewData={this.props.previewData}
+                                                />
+                                            </Col>
+                                        }
+                                    </>
+                                    )
+                                )
+                                }
 
                             </Row>
                         </div>
