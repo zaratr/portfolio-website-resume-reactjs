@@ -1,7 +1,8 @@
 .skills{
     background-image: url(../img/waveTestBackground.png), linear-gradient(90deg, #282828, #3c3c3c);
     background-size: cover;
-    height: 100%;
-    min-height: 25rem;
-    position: relative;
+    /*height: 100%;*/
+    /*min-height: 25rem;*/
+    /*position: relative;*/
+    z-index: -1;
 }
