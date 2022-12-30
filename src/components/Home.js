@@ -3,7 +3,11 @@ import '../style/home.css'
 import {Element} from 'react-scroll'
 import proImage from './../img/raultemp.jpg'
 class Home extends React.Component{
+    constructor(props) {
+        super(props);
+    }
     render() {
+        // console.log('HERE2', this.props.basicInfo);
         return(
             <Element className='home' id='home'>
                 <div className='layout'>

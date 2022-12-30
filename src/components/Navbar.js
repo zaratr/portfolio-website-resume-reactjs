@@ -61,13 +61,14 @@ class Navbar extends React.Component{
                 </div>
                 <p className={`p fixed ${this.state.fix?'' : 'hide'}`} onClick={scroll.scrollToTop}>Back To Top</p>
 
-                <ul className={`nav-content hide `}>
+                <ul className={`nav-content ${this.state.fix ?'hide':'shift' }`}>
                     <li className={`nav-items` } >
                         <Link to='home'
                               className={this.state.fix?'hide':''}
                               activeClass='active' spy={true}
                               smooth={true} offset={this.state.offset}
                               duration={this.state.dur}
+                              style={{color: 'unset', textDecoration:'unset'}}
                               onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-items'>
@@ -76,6 +77,7 @@ class Navbar extends React.Component{
                               activeClass='active' spy={true}
                               smooth={true} offset={this.state.offset}
                               duration={this.state.dur}
+                              style={{color: 'unset', textDecoration:'unset'}}
                               onClick={closeMenu}>Projects</Link>
                     </li>
                     <li className='nav-items'>
@@ -84,6 +86,7 @@ class Navbar extends React.Component{
                               activeClass='active' spy={true}
                               smooth={true} offset={this.state.offset}
                               duration={this.state.dur}
+                              style={{color: 'unset', textDecoration:'unset'}}
                               onClick={closeMenu}>Skills</Link>
                     </li>
                     <li className='nav-items'>
@@ -92,6 +95,7 @@ class Navbar extends React.Component{
                               activeClass='active' spy={true}
                               smooth={true} offset={this.state.offset}
                               duration={this.state.dur}
+                              style={{color: 'unset', textDecoration:'unset'}}
                               onClick={closeMenu}>About</Link>
                     </li>
                 </ul>
@@ -108,6 +112,7 @@ class Navbar extends React.Component{
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
+                                  style={{color: 'unset', textDecoration:'unset'}}
                                   onClick={closeMenu}>
                                 Home
                             </Link>
@@ -117,6 +122,7 @@ class Navbar extends React.Component{
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
+                                  style={{color: 'unset', textDecoration:'unset'}}
                                   onClick={closeMenu}>
                                 Projects
                             </Link>
@@ -126,6 +132,7 @@ class Navbar extends React.Component{
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
+                                  style={{color: 'unset', textDecoration:'unset'}}
                                   onClick={closeMenu}>
                                 Skills
                             </Link>
@@ -135,6 +142,7 @@ class Navbar extends React.Component{
                                   activeClass='active' spy={true}
                                   smooth={true} offset={this.state.offset}
                                   duration={this.state.dur}
+                                  style={{color: 'unset', textDecoration:'unset'}}
                                   onClick={closeMenu}>
                                 About
                             </Link>

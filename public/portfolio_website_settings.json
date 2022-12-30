@@ -1,0 +1,166 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Raul Zarate. Math is power and the gym is my playground. A few fun things I have self taught are building a Deep Reinforcement Learning Code to play agains a computer player and medium difficulty! Also, I built a Billy Bass the talking fish to speak using google voice/ Amazon Alexa! I enjoy making a good laugh with everyday things and very familiar with mechanical/electrical engineering. I have self taught myself a few back end languages and went to school for React, JavaScript!",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "BootStrap and HTML5-CSS3 WebPage",
+        "startDate": "2018",
+        "header": "FrontEnd Development",
+        "description": "Before Learning React, I self taught myself Multi Page App",
+        "type": "Web",
+        "images": [
+          "images/portfolio/bootstrap_javascript/topWeb.JPG",
+          "images/portfolio/bootstrap_javascript/middleWeb.JPG",
+          "images/portfolio/bootstrap_javascript/bottomWeb.JPG"
+        ],
+        "url": "https://github.com/zaratr/Web.git",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "BootStrap"
+          }
+        ]
+      },
+      {
+        "title": "Self Driving Car",
+        "startDate": "2018",
+        "header": "AI Development",
+        "description": "Practice with a Tesla-Like simulation environment to create a self-driving vehicle algorithm",
+        "type": "Web",
+        "images": [
+          "images/portfolio/SelfDrivingCar/ReinforcementLearning.JPG",
+          "images/portfolio/SelfDrivingCar/SelfDrivingCarCode.JPG"
+        ],
+        "url": "https://github.com/zaratr/SelfDrivingCarVision.git",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+          },
+          {
+            "class": "devicon-numpy-original-wordmark",
+            "name": "NumPy"
+          },
+          {
+            "class": "devicon-pandas-original",
+            "name": "Pandas"
+          }
+        ]
+      },
+      {
+        "title": "StarCraft 2 Bot",
+        "startDate": "2019",
+        "header": "FrontEnd Development",
+        "description": "Reinforcement learning AI to play against Computer and Human Players",
+        "type": "Web",
+        "images": [
+          "images/portfolio/StarCraft/StarCraftAI.JPG",
+          "images/portfolio/StarCraft/StarCraftBotCode.JPG"
+        ],
+        "url": "https://github.com/zaratr/DeepAIGameBot.git",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-numpy-original-wordmark",
+            "name": "NumPy"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Codefellows",
+        "title": "Full Stack Development with Java, ReactJs and Tutor",
+        "years": "03.2022 - 07.2022",
+        "mainTech": [
+          "ReactJs"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "JavaScript",
+          "Bootstrap",
+          "Single Page Application(front and back)",
+          "SQL",
+          "NoSQL",
+          "DataStructure and Algorithms",
+          "Functional Programming (lambda and Arrow Functions)"
+        ],
+        "icon": "devicon-react-plain"
+      },
+      {
+        "company": "Arizona State University",
+        "title": "Software Development - Student",
+        "years": "03.2021 - 09.2024",
+        "mainTech": [
+          "Java and Computer Science Fundementals"
+        ],
+        "technologies": [
+          "Data Structures and Algorithms",
+          "Principles of Programming",
+          "tutor"
+        ],
+        "icon": "devicon-java-plain"
+      },
+      {
+        "company": "Self-Taught",
+        "title": "Machine Learning Project",
+        "years": "03.2019 - 03.2021",
+        "mainTech": [
+          "Python, Neural Network, Machine Learning Concepts"
+        ],
+        "technologies": [
+          "Tensorflow 2.0",
+          "Numpy",
+          "CNN",
+          "Self-Driving Vehicle Simulation",
+          "Pandas",
+          "Skiplotlib",
+          "Keras",
+          "OpenCV"
+        ],
+        "icon": "devicon-python-plain"
+      },
+      {
+        "company": "Self-Taught",
+        "title": "Software Development",
+        "years": "01.2018 - 03.2019",
+        "mainTech": [
+          "Python, C, C++, and Java, Computer Science Fundementals"
+        ],
+        "technologies": [
+          "Data Structures and Algorithms",
+          "Principles of Programming",
+          "Big O, Big Theta, Big Omega",
+          "Recursion",
+          "Object-Oriented Programming",
+          "Operating Systems",
+          "Assembly language - ARM"
+        ],
+        "icon": "devicon-cplusplus-plain"
+      }
+    ]
+  }
