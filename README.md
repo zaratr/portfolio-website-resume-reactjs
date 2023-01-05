@@ -75,4 +75,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## function vs class
 - [react 18 info](https://reactjs.org/docs/hooks-state.html)
 
-https://github.com/zaratr/Smart-Android-Apps/blob/main/gwitr/src/main/resources/static/css/button.css
