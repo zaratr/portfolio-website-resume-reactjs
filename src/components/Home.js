@@ -13,7 +13,7 @@ class Home extends React.Component{
         return(
             <Element className='home' id='home'>
                 <div className='layout'>
-                    <p className='intro-paragraph text-white'>
+                    <p className='intro-paragraph fw-3 fw-light text-white'>
                         Hi!  I'm Raul, a Fullstack Developer with a Mathematics Degree. Projects below demonstrate some of
                         my skills on my journey in becoming a Computer Scientist.
                     </p>
