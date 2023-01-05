@@ -24,7 +24,6 @@ class About extends React.Component {
                                 <p className='text-justify center'>
                                     Contact me at : zarater.raul@gmail.com <a href={'https://mail.google.com'}>on gmail!</a>
                                     (424) 344-8286
-
                                 </p>
                             </Fade>
                         </div>
