@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import logo from "../img/logo.svg"
-import '../style/navbar.css'
+import logo from "../img/logo.svg";
+import backimg from "../img/back-to-top.gif";
+import '../style/navbar.css';
+import '../style/rain.css';
 
 class Navbar extends React.Component{
     constructor(props) {
@@ -17,6 +19,15 @@ class Navbar extends React.Component{
         }
     }
 
+    scrollerToTop = () => {
+        scroll.scrollTo(0, {
+            duration: 0,
+            delay: 100,
+            smooth: true,
+            // containerId: 'ContainerElementID',
+            offset: 50, // Scrolls to element + 50 pixels down the page
+        })
+    }
 
     render() {
         const updateMenu = () => {
@@ -37,24 +48,32 @@ class Navbar extends React.Component{
             window.scrollY >= 100? this.setState({fix:true}) : this.setState({fix:false})
         }
 
+
         window.addEventListener("scroll", setFixed);
         return(
             <nav className={ this.state.fix ? 'nav fixed':'nav'} id='navbar'>
 
                 <div className='logo-anime'
-                     style={!this.state.fix?{paddingLeft: (window.innerWidth/250)*window.scrollY} : {paddingLeft: (window.innerWidth - 300)/2}}
+                     style={!this.state.fix?{paddingLeft: (window.innerWidth/250)*window.scrollY} : {}}
                 >
 
                     <img
                         src={logo}
                         className='nav-logo'
                         alt='Logo'
-                        onClick={scroll.scrollToTop}
+                        onClick={this.scrollerToTop}
+                    />
+                    <img
+                        src={backimg}
+                        className={`back-button-image ${window.innerWidth }`}
+                        alt={'back-btn'}
+                        onClick={this.scrollerToTop}
+                        style={ {display:`${window.innerWidth < 771 ? 'block': 'none'}`}}
                     />
                 </div>
-                <p className={`p fixed ${this.state.fix?'' : 'hide'}`} onClick={scroll.scrollToTop}>Back To Top</p>
+                <p className={`p fixed ${this.state.fix?'' : 'hide'}`} onClick={this.scrollerToTop}>Back To Top</p>
 
-                <ul className={`nav-content ${this.state.fix ?'hide':'shift' }`}>
+                <ul className={`nav-content ${this.state.fix ?'hide':'shift' } rain`}>
                     <li className={`nav-items` } >
                         <Link to='home'
                               className={this.state.fix?'hide':''}
@@ -143,6 +162,7 @@ class Navbar extends React.Component{
                     </ul>
 
                 </div>
+
             </nav>
 
 
