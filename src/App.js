@@ -43,7 +43,7 @@ class App extends React.Component{
 
     async componentDidMount() {
         this.loadProjectsData('portfolio_website_settings.json');
-        this.loadSharedData('portfolio_website_settings.json');
+        this.loadSharedData('portfolio_shared_data.json');
     }
 
     render() {

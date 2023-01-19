@@ -26,80 +26,93 @@
       "icons": [
         {
           "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
+          "class": "HTML5"
         },
         {
           "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
+          "class": "CSS3"
         },
         {
           "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
+          "class": "Javascript"
         },
         {
           "name": "React",
-          "class": "devicon-react-plain",
-          "level": "65"
+          "class": "React"
         },
         {
-          "name": "C++(Strong)",
-          "class": "devicon-cplusplus-plain",
-          "level": "80"
+          "name": "Next",
+          "class": "NextJs"
         },
         {
-          "name": "C(Strong)",
-          "class": "devicon-c-plain",
-          "level": "90"
+          "name": "jQuery",
+          "class": "JQuery"
         },
         {
-          "name": "Python(Strong)",
-          "class": "devicon-python-plain",
-          "level": "75"
+          "name": "Node",
+          "class": "NodeJs"
         },
-        
         {
-          "name": "Java(Strong)",
-          "class": "devicon-java-plain",
-          "level": "60"
+          "name": "AWS",
+          "class": "Amazon-Web-Services"
+        },
+        {
+          "name": "MongoDB",
+          "class": "MongoDb"
+        },
+        {
+          "name": "PostGreSQL",
+          "class": "PostgreSQL"
+        },
+        {
+          "name": "Google Cloud",
+          "class": "Google-Cloud"
+        },
+        {
+          "name": "C++",
+          "class": "C++"
+        },
+        {
+          "name": "C",
+          "class": "C"
+        },
+        {
+          "name": "Python",
+          "class": "Python"
         },
 
         {
-          "name": "Pandas",
-          "class": "devicon-pandas-plain",
-          "level": "75"
+          "name": "Java",
+          "class": "Java"
         },
         {
+          "name": "Android Studio",
+          "class": "Android-Studio"
+        },
+        {
+          "name": "Spring Boot",
+          "class": "Spring-Boot"
+        },
+        {
+          "name": "Pandas",
+          "class": "Pandas"
+        },
+
+        {
           "name": "Tensorflow",
-          "class": "devicon-tensorflow-original",
-          "level": "75"
+          "class": "Tensorflow"
         },
         {
           "name": "Heroku",
-          "class": "devicon-heroku-plain",
-          "level": "75"
-        },
-        {
-          "name": "Keras",
-          "class": "devicon-kaggle-plain",
-          "level": "75"
+          "class": "Heroku"
         },
         {
           "name": "Sass",
-          "class": "devicon-sass-plain",
-          "level": "75"
+          "class": "Sass"
         },
         {
           "name":"OpenCV",
-          "class":"devicon-opencv-plain"
-
+          "class":"OpenCv"
         }
       ]
     }
