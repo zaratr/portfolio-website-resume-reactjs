@@ -27,8 +27,16 @@ class Skills extends React.Component{
         "Google-Cloud",
         "Android-Studio"
     ]
+        //<Skill
+    //key={i}
+    //url={`/images/icon/${item}.png`}
+//title={item}
+///>
 
     render() {
+        //console.log("SKILLS", this.props.skillsData.icons);
+        //console.log(typeof ("SKILLS arr", this.props.skillsData.icons));
+        //{console.log("HERE:", item['class']? item['class']:"")}
         return(
             <Element className='skills' id='skills'>
 
@@ -41,16 +49,18 @@ class Skills extends React.Component{
                         <Row className="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 text-center">
                             <Fade bottom>
 
-                                {this.skillList?.map((item, i) => {
-                                    return (
-                                        <Skill
-                                            key={i}
-                                            url={`/images/icon/${item}.png`}
-                                            title={item}
-                                        />
-
-                                    );
-                                })}
+                                {this.props.skillsData?
+                                    this.props.skillsData.icons?.map((item, i) => {
+                                        return(
+                                            <Skill
+                                                key={i}
+                                                url={`/images/icon/${item['class']}.png`}
+                                                title={item['name']}
+                                                />
+                                        )//map return
+                                })//map end
+                                    : ""//else do nothing
+                                    }
                             </Fade>
                         </Row>
                     </Container>
