@@ -50,9 +50,11 @@ class Projects extends React.Component{
                             <Row className={'text-center'}>
                                 <Col className={'col-12 col-lg-6'}>
                                     {this.props.projectsData?.map((project, i) => (
-                                            <>
-                                                {i < 2?
+                                            <div key={i}>
+
+                                                {i <= 2?
                                                     <ProjectCard
+                                                        key={i}
                                                         // projectsData={this.props.projectsData}
                                                         openPreview={this.openPreview}
                                                         projectData={project}
@@ -60,23 +62,24 @@ class Projects extends React.Component{
                                                     />
                                                     :""
                                                 }
-                                            </>
+                                            </div>
                                         )
                                     )
                                     }
                                 </Col>
                                 <Col className={'col-12 col-lg-6 mt-0 mt-lg-5'}>
                                     {this.props.projectsData?.map((project, i) => (
-                                            <>
+                                            <div key={i}>
                                                 {i > 2?
                                                     <ProjectCard
+                                                        key={i}
                                                         openPreview={this.openPreview}
                                                         projectData={project}
                                                         setPreviewData = {this.setPreviewData}
                                                     />
                                                     :""
                                                 }
-                                            </>
+                                            </div>
                                         )
                                     )
                                     }
