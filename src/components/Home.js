@@ -10,13 +10,13 @@ class Home extends React.Component{
         super(props);
     }
     render() {
-        // console.log('HERE2', this.props.basicInfo);
+        //if(this.props.basicInfo){console.log("HERE", this.props.basicInfo);}
+        //console.log('HERE2', this.props.basicInfo['intro']);
         return(
             <Element className='home' id='home'>
                 <div className='layout text-white text fs-1'>
                     <p className='intro-paragraph'>
-                        Hi!  I'm Raul, a Fullstack Developer with a Mathematics Degree. Projects below demonstrate some of
-                        my skills on my journey in becoming a Computer Scientist.
+                        {this.props.basicInfo?this.props.basicInfo['intro']:''}
                     </p>
 
                     <Fade delay={500}>

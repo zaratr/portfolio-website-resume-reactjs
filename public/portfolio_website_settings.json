@@ -1,6 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
+      "intro" : "Hi!  I'm Raul, a Fullstack Developer with a Mathematics Degree. Projects below demonstrate some of my skills on my journey in becoming a Computer Scientist.",
       "description": "👋 I'm Raul Zarate. Math is power and the gym is my playground. A few fun things I have self taught are building a Deep Reinforcement Learning Code to play agains a computer player and medium difficulty! Also, I built a Billy Bass the talking fish to speak using google voice/ Amazon Alexa! I enjoy making a good laugh with everyday things and very familiar with mechanical/electrical engineering. I have self taught myself a few back end languages and went to school for React, JavaScript!",
       "section_name": {
         "about": "About me",
