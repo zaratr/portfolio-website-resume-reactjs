@@ -10,13 +10,22 @@
         "experience": "Experience"
       }
     },
-    "projects": [
-      {
-        "title": "BootStrap and HTML5-CSS3 WebPage",
-        "startDate": "2018",
+  "about": {
+    "about_header":"About Me",
+    "description1":"My name is Raul, I'm currently a Fullstack DevelopmentTeaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.",
+    "description2":"Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment.",
+    "description3":"During these jobs, I self taught few programming languages and wen't to school for mathematics. below are some of the work I've done in Machine Learning, Full Stack, IOT projects, and Android Developement.",
+    "contact": "Contact me at : zarater.raul@gmail.com",
+    "email": "zarater.raul@gmail.com",
+    "contactphone": "(424) 344-8286"
+  },
+  "projects": [
+    {
+      "title": "My Website using ML and ReactJs",
+        "startDate": "2023",
         "header": "FrontEnd Development",
-        "description": "Before Learning React, I self taught myself Multi Page App",
-        "type": "Web",
+        "description": "Website latest ReactJs Framework. One may also use ML to ",
+        "type": "Web App",
         "images": [
           "images/portfolio/bootstrap_javascript/topWeb.JPG",
           "images/portfolio/bootstrap_javascript/middleWeb.JPG",

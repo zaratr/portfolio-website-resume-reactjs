@@ -60,7 +60,7 @@ class App extends React.Component{
                 />
 
                 <Skills skillsData={this.state.sharedData.skills}/>
-                <About/>
+                <About about={this.state.portfolioData.about}/>
                 <Footer/>
             </>
         );//return

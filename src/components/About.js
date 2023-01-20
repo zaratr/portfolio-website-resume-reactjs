@@ -7,6 +7,7 @@ import {Container} from "react-bootstrap";
 
 class About extends React.Component {
     render() {
+        //console.log("HERE", this.props.about[0])
         return (
             <Element className='about' id='about'>
                 <div className={'w-100 m-0 p-0'}>
@@ -17,14 +18,26 @@ class About extends React.Component {
                         </Fade>
                         <div className={'fs-3 fw-light'}>
                             <Fade bottom>
-                                <p className={'text-justify'}>My name is Raul, I'm currently a Fullstack DevelopmentTeaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.
-                                </p>
-                                <p className='text-justify'>Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment. </p>
-                                <p className='text-justify'>During these jobs, I self taught few programming languages and wen't to school for mathematics. below are some of the work I've done in Machine Learning, Full Stack, IOT projects, and Android Developement.</p>
-                                <p className='text-justify center'>
-                                    Contact me at : zarater.raul@gmail.com <a href={'https://mail.google.com'}>on gmail!</a>
-                                    (424) 344-8286
-                                </p>
+                                {this.props.about !== undefined?
+                                    (
+                                        <div>
+                                            <p className={'text-justify'}>
+                                                {this.props.about.description1}
+                                            </p>
+                                            <p className='text-justify'>
+                                                {this.props.about.description2}
+                                            </p>
+                                            <p className='text-justify'>
+                                                {this.props.about.description3}
+                                            </p>
+                                            <p className='text-justify center'>
+                                                Contact Me :&nbsp;
+                                                <a href={'https://mail.google.com'}>{`${this.props.about.email}`}</a>
+                                                 &nbsp;on Gmail!
+                                                {this.props.about.contactphone}
+                                            </p>
+                                        </div>
+                                    ):""}
                             </Fade>
                         </div>
                     </Container>
