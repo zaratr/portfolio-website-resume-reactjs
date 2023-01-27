@@ -13,6 +13,7 @@ class ProjectCard extends React.Component{
         this.state = {
             touched : false,
             previewData : [],
+            imgRatio: 0
         }
     }
 
@@ -39,13 +40,15 @@ class ProjectCard extends React.Component{
         event.stopPropagation();
         window.open(url, "blank").focus();
     };
-
     aspectRatio = (imageSrc) =>{
         console.log(imageSrc);
-        let ar = imageSrc.width;
+        let image = document.createElement('img');
+        image.src = imageSrc
+        let ar = image.width/image.height;
         console.log(ar)
-        return 1;
+        return ar;
     }
+
     render(){
 
 
@@ -64,7 +67,7 @@ class ProjectCard extends React.Component{
                     >
                     {(src, loading) =>{
 
-                        let imageAspectRatio = this.aspectRatio(src)
+                        //let imageAspectRatio = this.aspectRatio(src)
                         return (
                         !loading ? (
                             <div className="img-hover-zoom position-relative">
@@ -76,11 +79,12 @@ class ProjectCard extends React.Component{
                                     {this.props.projectData.type}
                                 </Badge>
                                 <img
-                                    className={`card-img-top project-avatar`}
-                                    style={{ opacity: loading ? 0.1 : 1}}
+                                    className={`card-img-top project-avatar `}
+                                    style={{ opacity: loading ? 0.1 : 1, width: `${this.aspectRatio(src) > 1? '': '50%'}`}}
                                     src={src}
                                     alt={src}
                                     sizes="10"
+                                    //onLoad={this.aspectRatio(src)}
                                 />
                             </div>
                         ) : (
@@ -90,7 +94,6 @@ class ProjectCard extends React.Component{
                                     loading={true}
                                     css={this.override}
                                     size={20}
-                                    onLoad={this.aspectRatio(src)}
                                 />
                             </Container>
                         )
