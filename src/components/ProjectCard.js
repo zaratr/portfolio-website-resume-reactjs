@@ -80,7 +80,7 @@ class ProjectCard extends React.Component{
                                 </Badge>
                                 <img
                                     className={`card-img-top project-avatar `}
-                                    style={{ opacity: loading ? 0.1 : 1, width: `${this.aspectRatio(src) > 1? '': '50%'}`}}
+                                    style={{ opacity: loading ? 0.1 : 1, width: `${this.aspectRatio(src) > 1? '': '30%'}`}}
                                     src={src}
                                     alt={src}
                                     sizes="10"

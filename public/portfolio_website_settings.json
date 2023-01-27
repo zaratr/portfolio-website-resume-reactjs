@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "intro" : "Hi!  I'm Raul, a Fullstack Developer with a Mathematics Degree. Projects below demonstrate some of my skills on my journey in becoming a Computer Scientist.",
+      "intro" : "Hi!  I'm Raul, a Fullstack Developer and Mathematics Guru! Count on me to figure it out!",
       "description": "👋 I'm Raul Zarate. Math is power and the gym is my playground. A few fun things I have self taught are building a Deep Reinforcement Learning Code to play agains a computer player and medium difficulty! Also, I built a Billy Bass the talking fish to speak using google voice/ Amazon Alexa! I enjoy making a good laugh with everyday things and very familiar with mechanical/electrical engineering. I have self taught myself a few back end languages and went to school for React, JavaScript!",
       "section_name": {
         "about": "About me",
@@ -12,50 +12,57 @@
     },
   "about": {
     "about_header":"About Me",
-    "description1":"My name is Raul, I'm currently a Fullstack DevelopmentTeaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.",
-    "description2":"Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment.",
-    "description3":"During these jobs, I self taught few programming languages and wen't to school for mathematics. below are some of the work I've done in Machine Learning, Full Stack, IOT projects, and Android Developement.",
+    "description1": "My journey as a Computer Scientist began in 2012 with almost a year before my last day in the Marine Corps.  Since Then, I've expanded my knowledge into mathematics, full-stack development, machine learning, and various open source projects.",
+    "description2":"My name is Raul, I'm currently a Fullstack DevelopmentTeaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.",
+    "description3":"Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment.",
     "contact": "Contact me at : zarater.raul@gmail.com",
     "email": "zarater.raul@gmail.com",
     "contactphone": "(424) 344-8286"
   },
   "projects": [
     {
-      "title": "Web App with Custom CSS",
-        "startDate": "2023",
-        "header": "FrontEnd Development",
-        "description": "Website latest ReactJs Framework.",
-        "type": "Web App",
-        "images": [
-          "images/portfolio/my_website/react-app1.gif",
-          "images/portfolio/my_website/react-app1.gif",
-          "images/portfolio/my_website/react-app1.gif"
-        ],
-        "url": "https://github.com/zaratr/Web.git",
-        "technologies": [
-          {
-            "class": "images/icon/Javascript.png",
-            "name": "JavaScript"
-          },
-          {
-            "class": "images/icon/HTML5.png",
-            "name": "HTML5"
-          },
-          {
-            "class": "images/icon/CSS3.png",
-            "name": "CSS3"
-          }
-        ]
-      },
+      "title": "Georgia Tech Career Fair App",
+      "startDate": "2018",
+      "header": "FrontEnd Development",
+      "description": "Career Fair App that uses a queue system to manage all students and employees attending. Uses AWS Cognito for authentication, DynamoDb for large complex tables, and AWS lambda triggers that link the tables instentanously!",
+      "type": "Web App",
+      "images": [
+        "images/portfolio/gatech/gatech.PNG",
+        "images/portfolio/gatech/loggedin.PNG",
+        "images/portfolio/gatech/loginsplash.PNG"
+      ],
+      "url": "https://github.com/zaratr/Web.git",
+      "technologies": [
+        {
+          "class": "images/icon/Javascript.png",
+          "name": "HTML5"
+        },
+        {
+          "class": "images/icon/CSS3.png",
+          "name": "CSS3"
+        },
+        {
+          "class": "images/icon/Javascript.png",
+          "name": "JavaScript"
+        },
+        {
+          "class": "images/icon/NextJs.png",
+          "name": "NextJs"
+        }
+      ]
+    },
       {
-        "title": "Georgia Tech Web App using AWS Cognito, and DynamoDB",
+        "title": "Fitness App Spotter!",
         "startDate": "2023",
         "header": "Full Stack",
-        "description": "Practice with a Tesla-Like simulation environment to create a self-driving vehicle algorithm",
+        "description": "Prevent injury by having a personal spotter on your phone! Using Computer Vision to help you become the best version of yourself!",
         "type": "Web App",
         "images": [
-          "images/portfolio/SelfDrivingCar/ReinforcementLearning.JPG",
-          "images/portfolio/SelfDrivingCar/SelfDrivingCarCode.JPG"
+          "images/portfolio/fitnessapp/pushupreps.gif",
+          "images/portfolio/fitnessapp/squatreps.gif",
+          "images/portfolio/fitnessapp/loginvideo.gif",
+          "images/portfolio/fitnessapp/signup.png",
+          "images/portfolio/fitnessapp/googlemapsapi.png"
         ],
         "url": "https://github.com/zaratr/SelfDrivingCarVision.git",
         "technologies": [
@@ -99,33 +106,34 @@
           }
         ]
       },
-      {
-        "title": "Georgia Tech Career Fair App",
-        "startDate": "2018",
-        "header": "FrontEnd Development",
-        "description": "Career Fair App that uses AWS Cognito, DynamoDb. CRUD operations were used to modify tables in DynamoDb.",
-        "type": "Web App",
-        "images": [
-          "images/portfolio/le_chef/banana_example.gif",
-          "images/portfolio/my_website/react-app1.gif",
-          "images/portfolio/my_website/react-app1.gif"
-        ],
-        "url": "https://github.com/zaratr/Web.git",
-        "technologies": [
-          {
-            "class": "images/icon/Javascript.png",
-            "name": "JavaScript"
-          },
-          {
-            "class": "images/icon/HTML5.png",
-            "name": "HTML5"
-          },
-          {
-            "class": "images/icon/CSS3.png",
-            "name": "CSS3"
-          }
-        ]
-      },
+
+    {
+      "title": "Web App with Custom CSS",
+      "startDate": "2023",
+      "header": "FrontEnd Development",
+      "description": "Website latest ReactJs Framework.",
+      "type": "Web App",
+      "images": [
+        "images/portfolio/my_website/react-app1.gif",
+        "images/portfolio/my_website/react-app1.gif",
+        "images/portfolio/my_website/react-app1.gif"
+      ],
+      "url": "https://github.com/zaratr/Web.git",
+      "technologies": [
+        {
+          "class": "images/icon/Javascript.png",
+          "name": "JavaScript"
+        },
+        {
+          "class": "images/icon/HTML5.png",
+          "name": "HTML5"
+        },
+        {
+          "class": "images/icon/CSS3.png",
+          "name": "CSS3"
+        }
+      ]
+    },
       {
         "title": "Self Driving Car",
         "startDate": "2018",

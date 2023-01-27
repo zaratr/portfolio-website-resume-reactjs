@@ -112,3 +112,8 @@
         padding-top: 50px;
     }
 }
+@media only screen and (max-width: 321px){
+    intro-paragraph{
+        font-size: 15px;
+    }
+}
