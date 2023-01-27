@@ -12,14 +12,18 @@ class ProjectCard extends React.Component{
         super(props);
         this.state = {
             touched : false,
-            previewData : []
+            previewData : [],
         }
     }
+
+
     override = css`
     display: block;
     margin: 10rem auto;
     border-color: red;
     `;
+
+
     openModal = () =>{
         this.props.openPreview();
         const tempData = this.props.projectData;
@@ -36,7 +40,15 @@ class ProjectCard extends React.Component{
         window.open(url, "blank").focus();
     };
 
+    aspectRatio = (imageSrc) =>{
+        console.log(imageSrc);
+        let ar = imageSrc.width;
+        console.log(ar)
+        return 1;
+    }
     render(){
+
+
         if(this.props.projectData){
             var project = <Card
                 className={`mb-4 project-card shadow rounded-0 ${this.state.touched? 'project-card-focus': ''}`}
@@ -48,8 +60,12 @@ class ProjectCard extends React.Component{
             >
                 <ProgressiveImage
                     placeholder={`https://via.placeholder.com/30x20/a334d2/ffffff/&text=TinyPlaceholder`}
-                    src={`${this.props.projectData.images[0]}`}>
-                    {(src, loading) =>
+                    src={`${this.props.projectData.images[0]}`}
+                    >
+                    {(src, loading) =>{
+
+                        let imageAspectRatio = this.aspectRatio(src)
+                        return (
                         !loading ? (
                             <div className="img-hover-zoom position-relative">
                                 <Badge
@@ -60,8 +76,8 @@ class ProjectCard extends React.Component{
                                     {this.props.projectData.type}
                                 </Badge>
                                 <img
-                                    className="card-img-top project-avatar"
-                                    style={{ opacity: loading ? 0.1 : 1 }}
+                                    className={`card-img-top project-avatar`}
+                                    style={{ opacity: loading ? 0.1 : 1}}
                                     src={src}
                                     alt={src}
                                     sizes="10"
@@ -74,9 +90,12 @@ class ProjectCard extends React.Component{
                                     loading={true}
                                     css={this.override}
                                     size={20}
+                                    onLoad={this.aspectRatio(src)}
                                 />
                             </Container>
                         )
+                        )
+                        }
                     }
 
                 </ProgressiveImage>

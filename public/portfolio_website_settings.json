@@ -21,15 +21,15 @@
   },
   "projects": [
     {
-      "title": "My Website using ML and ReactJs",
+      "title": "Web App with Custom CSS",
         "startDate": "2023",
         "header": "FrontEnd Development",
-        "description": "Website latest ReactJs Framework. One may also use ML to ",
+        "description": "Website latest ReactJs Framework.",
         "type": "Web App",
         "images": [
-          "images/portfolio/bootstrap_javascript/topWeb.JPG",
-          "images/portfolio/bootstrap_javascript/middleWeb.JPG",
-          "images/portfolio/bootstrap_javascript/bottomWeb.JPG"
+          "images/portfolio/my_website/react-app1.gif",
+          "images/portfolio/my_website/react-app1.gif",
+          "images/portfolio/my_website/react-app1.gif"
         ],
         "url": "https://github.com/zaratr/Web.git",
         "technologies": [
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "title": "Self Driving Car",
-        "startDate": "2018",
-        "header": "AI Development",
+        "title": "Georgia Tech Web App using AWS Cognito, and DynamoDB",
+        "startDate": "2023",
+        "header": "Full Stack",
         "description": "Practice with a Tesla-Like simulation environment to create a self-driving vehicle algorithm",
-        "type": "Web",
+        "type": "Web App",
         "images": [
           "images/portfolio/SelfDrivingCar/ReinforcementLearning.JPG",
           "images/portfolio/SelfDrivingCar/SelfDrivingCarCode.JPG"
@@ -100,15 +100,15 @@
         ]
       },
       {
-        "title": "BootStrap and HTML5-CSS3 WebPage",
+        "title": "Georgia Tech Career Fair App",
         "startDate": "2018",
         "header": "FrontEnd Development",
-        "description": "Before Learning React, I self taught myself Multi Page App",
-        "type": "Web",
+        "description": "Career Fair App that uses AWS Cognito, DynamoDb. CRUD operations were used to modify tables in DynamoDb.",
+        "type": "Web App",
         "images": [
-          "images/portfolio/bootstrap_javascript/topWeb.JPG",
-          "images/portfolio/bootstrap_javascript/middleWeb.JPG",
-          "images/portfolio/bootstrap_javascript/bottomWeb.JPG"
+          "images/portfolio/le_chef/banana_example.gif",
+          "images/portfolio/my_website/react-app1.gif",
+          "images/portfolio/my_website/react-app1.gif"
         ],
         "url": "https://github.com/zaratr/Web.git",
         "technologies": [

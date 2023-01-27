@@ -21,4 +21,11 @@
 
 .project-avatar {
     min-height: 20rem;
+   /* max-height: 22rem;*/
+}
+
+/*calc(0.375rem- 1px)*/
+
+.vertical-image{
+    width: 50%;
 }
