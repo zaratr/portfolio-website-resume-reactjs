@@ -47,8 +47,8 @@
 }
 
 .proImage{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 300px;
 }
 
 @keyframes animate-wave{
