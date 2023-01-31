@@ -20,7 +20,7 @@ class Home extends React.Component{
                     </p>
 
                     <Fade delay={500}>
-                        <Image className='proImage avatar-wobble m-2' src={proImage} alt=""/>
+                        <Image className='proImage avatar-wobble m-2' src={`${this.props.basicInfo? this.props.basicInfo['proImage']:''}`} placeholder={proImage} alt=""/>
                     </Fade>
                 </div>
                 <div className='wave'></div>
