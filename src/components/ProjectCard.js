@@ -134,8 +134,7 @@ class ProjectCard extends React.Component{
                                             <ButtonLink
                                                 projectUrl={this.props.projectData.url}
                                                 liveText={'live page'}
-                                                linkIcon={'images/icon/github.png'}>
-
+                                                linkIcon={`${this.props.projectData.url.endsWith('.git')?'images/icon/github.png': 'images/icon/livelink.png'}`}>
                                             </ButtonLink>
                                         </Col>
                                     ):("")}

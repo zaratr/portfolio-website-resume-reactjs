@@ -25,14 +25,17 @@
       "title": "Georgia Tech Career Fair App",
       "startDate": "2022",
       "header": "FrontEnd Development",
-      "description": "Career Fair App that uses a queue system to manage all students and employees attending. Uses AWS Cognito for authentication, DynamoDb for large complex tables, and AWS lambda triggers that link the tables instentanously!",
+      "description": "Career Fair App that uses a queue system to manage all students and employees attending." ,
+      "point1": "Uses AWS Cognito for authentication",
+      "point2": "DynamoDb for large complex tables",
+      "point3": "AWS lambda triggers that link instantaneously!",
       "type": "Web App",
       "images": [
         "images/portfolio/gatech/gatech.PNG",
         "images/portfolio/gatech/loggedin1.PNG",
         "images/portfolio/gatech/loginsplash1.PNG"
       ],
-      "url": "https://github.com/zaratr/Web.git",
+      "url": "https://careerfair.gatech.edu/upcoming-career-fairs/entry/1291/",
       "technologies": [
         {
           "class": "images/icon/HTML5.png",
@@ -172,7 +175,7 @@
         "title": "Gwitr Social Media!",
         "startDate": "2022",
         "header": "Full Stack Development",
-        "description": "We are also looking to see what it took to build Twitter and how to enhance it! Able to create, delete, update, get posts and interact with other users using Spring Boot, Java, BCrypt to Authenticate, and whole lot of CSS for animations!",
+        "description": "How Difficult is it to implement a Twitter - A social media platform? This Gwitr websit is able to create, delete, update, get posts and interact with other users using Spring Boot, Java, BCrypt to Authenticate, and whole lot of CSS for animations!",
         "type": "Web",
         "images": [
           "images/portfolio/gwitr/landingpage.jpg",
