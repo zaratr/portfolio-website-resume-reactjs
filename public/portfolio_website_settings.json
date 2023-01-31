@@ -14,7 +14,7 @@
   "about": {
     "about_header":"About Me",
     "description1": "My journey as a Computer Scientist began in 2012 with almost a year before my last day in the Marine Corps.  Since Then, I've expanded my knowledge into mathematics, full-stack development, machine learning, and various open source projects.",
-    "description2":"My name is Raul, I'm currently a Fullstack DevelopmentTeaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.",
+    "description2":"My name is Raul, I'm currently a Fullstack Development to Teaching Assistant at Codefellows in Seattle. Here, we develop fully immersive websites on Reactjs, JavaScript, Python, and Java.",
     "description3":"Before Codefellows I worked at Intel as a Semi Conductor Manufacturing Technician where I lead a team to maintain and repair large equipment.",
     "contact": "Contact me at : zarater.raul@gmail.com",
     "email": "zarater.raul@gmail.com",
@@ -23,19 +23,19 @@
   "projects": [
     {
       "title": "Georgia Tech Career Fair App",
-      "startDate": "2018",
+      "startDate": "2022",
       "header": "FrontEnd Development",
       "description": "Career Fair App that uses a queue system to manage all students and employees attending. Uses AWS Cognito for authentication, DynamoDb for large complex tables, and AWS lambda triggers that link the tables instentanously!",
       "type": "Web App",
       "images": [
         "images/portfolio/gatech/gatech.PNG",
-        "images/portfolio/gatech/loggedin.PNG",
-        "images/portfolio/gatech/loginsplash.PNG"
+        "images/portfolio/gatech/loggedin1.PNG",
+        "images/portfolio/gatech/loginsplash1.PNG"
       ],
       "url": "https://github.com/zaratr/Web.git",
       "technologies": [
         {
-          "class": "images/icon/Javascript.png",
+          "class": "images/icon/HTML5.png",
           "name": "HTML5"
         },
         {
