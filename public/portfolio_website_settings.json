@@ -68,7 +68,7 @@
           "images/portfolio/fitnessapp/signup.png",
           "images/portfolio/fitnessapp/googlemapsapi.png"
         ],
-        "url": "https://github.com/zaratr/SelfDrivingCarVision.git",
+        "url": "https://github.com/zaratr/fitnessapp.git",
         "technologies": [
           {
             "class": "images/icon/Python.png",
@@ -101,7 +101,7 @@
         "images/portfolio/my_website/react-app1.gif",
         "images/portfolio/my_website/react-app1.gif"
       ],
-      "url": "https://github.com/zaratr/Web.git",
+      "url": "https://github.com/zaratr/portfolio-website-resume-reactjs.git",
       "technologies": [
         {
           "class": "images/icon/Javascript.png",
@@ -159,7 +159,7 @@
         "images/portfolio/le_chef/orange_example.gif",
         "images/portfolio/le_chef/pen_example.gif"
       ],
-      "url": "https://github.com/zaratr/DeepAIGameBot.git",
+      "url": "https://github.com/zaratr/le_chef.git",
       "technologies": [
         {
           "class": "images/icon/Python.png",
@@ -182,7 +182,7 @@
           "images/portfolio/gwitr/signup.gif",
           "images/portfolio/gwitr/addpost.gif"
         ],
-        "url": "https://github.com/zaratr/DeepAIGameBot.git",
+        "url": "https://github.com/zaratr/social-media-gwitr-like-twitter.git",
         "technologies": [
           {
             "class": "images/icon/Python.png",
